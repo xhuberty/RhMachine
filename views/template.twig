@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="{{ rootUrl }}/public/css/materialize.min.css">
+        <link rel="stylesheet" href="{{ rootUrl }}/public/css/style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="{{ rootUrl }}/public/js/materialize.min.js"></script>
+
+
+        <script src="https://use.fontawesome.com/f96688f036.js"></script>
+        <title>RhMachine</title>
+    {% endblock %}
+</head>
+<body class="grey lighten-2">
+    <header>
+        {% block header %}
+            <!-- Navbar goes here -->
+            <div class="navbar-fixed">
+                <nav class="cyan darken-2">
+                    <div class="nav-wrapper  container">
+                        <a href="#!" class="brand-logo">RhMachine</a>
+                    </div>
+                </nav>
+            </div>
+        {% endblock %}
+    </header>
+    <main class="container" id="main" style="margin-top: 30px;">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="page-footer grey lighten-2">
+        {% block footer %}
+            <div class="footer-copyright cyan darken-2">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        {% endblock %}
+    </footer>
+</body>
+</html>

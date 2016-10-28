@@ -1,0 +1,28 @@
+{
+	"autoload": {
+        "psr-4": {
+            "RhMachine\\": "src/"
+        }
+
+    },
+
+    "require": {
+        "mouf/mvc.splash-common": "~8.0",
+        "mnapoli/simplex": "~0.2.0",
+        "mouf/utils.console": "^1.0.0",
+        "thecodingmachine/whoops-middleware-universal-module": "~0.4",
+        "thecodingmachine/stratigility-harmony": "^1.0",
+        "thecodingmachine/doctrine-annotations-universal-module": "~1.0",
+        "thecodingmachine/psr-6-doctrine-bridge-universal-module": "~1.0",
+        "thecodingmachine/stash-universal-module": "~1.0",
+        "mouf/security.userservice": "^2.1.0",
+        "mouf/security.userservice-splash": "^8.0.0",
+        "mouf/security.simplelogincontroller": "^5.0.0",
+        "thecodingmachine/swift-twig-mail-template": "^5.0.0",
+        "ccmbenchmark/ting": "~1.0",
+        "myclabs/php-enum": "^1.4.1",
+        "twig/twig": "^1.24.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

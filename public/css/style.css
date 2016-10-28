@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* label color */
+.input-field label {
+    color: #071108;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #A4036F;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #A4036F;
+    box-shadow: 0 1px 0 0 #A4036F;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #071108;
+    box-shadow: 0 1px 0 0 #071108;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #071108;
+    box-shadow: 0 1px 0 0 #071108;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #A4036F;
+}
+
+ul.autocomplete-content.dropdown-content li > span {
+    color: #A4036F;
+}
+
+.btn {
+     background-color: #A4036F;
+ }
+
+.btn:hover {
+    background-color: white;
+    color: #A4036F;
+}
+
+.pagination li.active {
+    background-color: #A4036F;
+    border-radius: 50%;
+}
+
+.btn-floating i:hover {
+    color: #A4036F;
+}
